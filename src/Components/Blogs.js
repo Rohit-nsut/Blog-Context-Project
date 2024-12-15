@@ -8,7 +8,7 @@ const Blogs = () => {
   const {loading, posts} = useContext(AppContext);
 
   return (
-    <div className='mt-24 mb-20 justify-center items-center'>
+    <div className='mt-24 mb-20 justify-center items-center w-full overflow-x-hidden'>
         
         {
           loading ? (<Spinner />) : 
