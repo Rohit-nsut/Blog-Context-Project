@@ -9,7 +9,7 @@ const Pagination = () => {
     return (
         <div className="border-t-2 border-pink-500 fixed bottom-0 w-full bg-blue-500">
 
-            <div className="w-11/12 md:w-9/12 lg:w-[45%] flex justify-between mx-auto my-2">
+            <div className="w-11/12 md:w-9/12 lg:w-[45%] flex justify-between items-center mx-auto my-2">
 
                 <div className="flex gap-3 text-lg font-normal">
                     {
