@@ -8,7 +8,7 @@ const Blogs = () => {
   const {loading, posts} = useContext(AppContext);
 
   return (
-    <div className='mt-24 mb-20 justify-center items-center w-full overflow-x-hidden'>
+    <div className='my-16 justify-center items-center w-full overflow-x-hidden'>
         
         {
           loading ? (<Spinner />) : 
@@ -27,9 +27,9 @@ const Blogs = () => {
                   <p>Posted on {post.date} </p>
 
                   <p className='mt-3 text-base font-normal font-serif'>{post.content} </p>
-                  <div>
+                  <div className='flex flex-wrap gap-2 '>
                     {post.tags.map( (tag, index) => {
-                      return <span key={index} className='text-blue-500 underline pr-2 font-semibold text-xs'>#{tag}</span>
+                      return <span key={index} className='text-blue-800 underline font-semibold text-xs mt-[5px]'>#{tag}</span>
                     })}
                   </div>
                 </div>
